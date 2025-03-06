@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  overflow-x: hidden;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-300;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white transition-colors duration-300;
+  }
+}
+
+/* Animation classes */
+.wow {
+  visibility: hidden;
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom styles for hero section */
+@layer utilities {
+  .tracking-wide {
+    letter-spacing: 0.05em;
+  }
+
+  .leading-tight {
+    line-height: 1.2;
+  }
+}
+
