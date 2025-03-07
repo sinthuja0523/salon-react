@@ -9,6 +9,7 @@ import Team from './components/Team/Team';
 import WorkingHour from './components/WorkingHour/WorkingHour';
 import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer';
+import AppointmentForm from './components/AppointmentForm/AppointmentForm';
 
 
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
     <div className="relative min-h-screen overflow-x-hidden">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
-      
+      <AppointmentForm />
       <section id="about"></section>
       <About />
       <section id="services"></section>

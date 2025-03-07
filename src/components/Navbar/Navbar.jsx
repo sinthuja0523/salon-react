@@ -1,4 +1,4 @@
-
+import { Scissors } from "lucide-react";
 import React, { useState } from 'react'; 
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
@@ -23,9 +23,11 @@ const Navbar = ({ theme, setTheme }) => {
     <nav className="shadow-md bg-white dark:bg-dark dark:text-white transition duration-300 fixed w-full z-50">
       <div className="flex justify-between py-3 px-5 items-center">
         {/* Logo */}    
-        <h1 className="font-roboto text-3xl md:text-4xl font-bold text-primary">
-          Classic Cuts
-        </h1>
+        <h1 className="font-roboto text-3xl md:text-4xl font-bold text-primary flex items-center gap-2">
+  <Scissors size={32} className="text-primary" />
+  Classic Cuts
+</h1>
+
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
@@ -43,11 +45,10 @@ const Navbar = ({ theme, setTheme }) => {
           </ul>
 
           {/* Appointment Button */}
-          <button 
-        
-          className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors duration-300">
-            Appointment
-          </button>
+          <a href="#appointment" className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors duration-300">
+  Appointment
+</a>
+
 
           {/* Theme Toggle */}
           <div onClick={handleThemeToggle} className="cursor-pointer text-2xl">
