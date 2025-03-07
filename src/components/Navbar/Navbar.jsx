@@ -22,7 +22,7 @@ const Navbar = ({ theme, setTheme }) => {
   return (
     <nav className="shadow-md bg-white dark:bg-dark dark:text-white transition duration-300 fixed w-full z-50">
       <div className="flex justify-between py-3 px-5 items-center">
-        {/* Logo */}
+        {/* Logo */}    
         <h1 className="font-roboto text-3xl md:text-4xl font-bold text-primary">
           Classic Cuts
         </h1>
@@ -43,7 +43,9 @@ const Navbar = ({ theme, setTheme }) => {
           </ul>
 
           {/* Appointment Button */}
-          <button className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors duration-300">
+          <button 
+        
+          className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors duration-300">
             Appointment
           </button>
 
@@ -106,12 +108,12 @@ const Navbar = ({ theme, setTheme }) => {
               </li>
             ))}
             <li>
-              <button
-                className="bg-primary text-white py-2 px-6 rounded-md hover:bg-primary-dark transition-colors duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Appointment
-              </button>
+            <button 
+  className="bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors duration-300"
+>
+  Appointment
+</button>
+
             </li>
             {/* Theme Toggle in Mobile */}
             <li className="mt-2">

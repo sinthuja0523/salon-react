@@ -10,6 +10,7 @@ import WorkingHour from './components/WorkingHour/WorkingHour';
 import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer';
 
+
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
@@ -23,6 +24,7 @@ const App = () => {
     <div className="relative min-h-screen overflow-x-hidden">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
+      
       <section id="about"></section>
       <About />
       <section id="services"></section>
